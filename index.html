@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Justin Coleman</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Justin Coleman" />
+        <meta property="og:image" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link href='http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/build/min/main.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="persist-header">Justin Coleman <em>Front-end Developer</em></h1>
+        </header>
+        <div class="content cf">
+            <section class="about">
+                <p>I'm a Front-end Developer with over 4 years experience using web technologies including HTML, CSS, Javascript, jQuery, Sass, Bootstrap, Zurb Foundation, and many others. My experience also includes many years spent working in the Adobe Creative Suite using programs such as Photoshop, Illustrator, and Fireworks.</p>
+                <p>I enjoy hand-coding responsive, grid-based websites that are modern and feature-rich but that also degrade gracefully on less capable browsers. I believe in pushing the web forward while also supporting as many users as feasibly possible.</p>
+                <p><em>This website wouldn't exist without powerful tools such as <a href="http://www.sublimetext.com/" target="_blank" alt="Sublime Text 3">Sublime Text 3</a>, <a href="http://sass-lang.com/" target="_blank" alt="Sass">Sass</a> and <a href="http://gruntjs.com/" target="_blank" alt="Grunt">Grunt</a>. I highly recommend you check all of them out!</em></p>
+            </section>
+            <section class="portfolio cf">
+                <h2>Recent Work</h2>
+
+                <div class="full-width">
+                    <div class="img-container">
+                        <a href="http://www.caringo.com">
+                            <img src="images/caringo.png" alt="Caringo.com Redesign" />
+                        </a>
+                        <a href="http://stayawakedesign.com/clients/1/index.html"><img src="images/gold_exchange.png" alt="The Gold Exchange" /></a>
+                        <a href="http://omega.uta.edu/~jvc2267/CTEC4350/project/"><img src="images/pkp.png" alt="Phi Kappa Phi Website" /></a>
+                        <a href="http://stayawakedesign.com/"><img src="images/stayawake_design.png" alt="StayAwake Design" /></a>
+                    </div>
+                </div>
+            </section>
+            <section class="cv cf">
+                <h2>CV</h2>
+                <div class="float-left work stack-on-mobile">
+                    <h3>Work History</h3>
+
+                    <h4 class="employer">Caringo, Inc. <span>4/12 - Present</span></h4>
+                    <p class="title">Web Application Developer</p>
+
+                    <h4 class="employer">BuildASign.com <span>2/12 - 4/12</span></h4>
+                    <p class="title">Front-end Developer</p>
+
+                    <h4 class="employer">BuildASign.com <span>3/11 - 2/12</span></h4>
+                    <p class="title">Jr. Front-end Developer</p>
+
+                    <h4 class="employer">Texas Association of School Boards <span>8/10 - 2/11</span></h4>
+                    <p class="title">Web Production Specialist</p>
+                </div>
+
+                <div class="float-right education stack-on-mobile">
+                    <h3>Education</h3>
+
+                    <h4 class="school">The University of Texas at Arlington <span>2006 - 2010</span></h4>
+                    <p class="degree">Communication Technology</p>
+                </div>
+            </section>
+        </div>
+        <footer class="cf">
+            <section>
+                <ul class="social">
+                    <li><a href="http://twitter.com/jcoleman"><img src="images/social/twitter-icon.svg" alt="Twitter" /></a></li>
+                    <li><a href="http://www.linkedin.com/in/colemanjustin/"><img src="images/social/linkedin-icon.svg" alt="LinkedIn" /></a></li>
+                    <li><a href="https://github.com/justincoleman"><img src="images/social/github-icon.svg" alt="GitHub" /></a></li>
+                    <li><a href="http://jcoleman.co"><img src="images/social/rss-feed-icon.svg" alt="Blog" /></a></li>
+                </ul>
+                <p class="copyright">made in Texas - 2014</p>
+            </section>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/build/production.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var container_width = SINGLE_IMAGE_WIDTH * $(".img-container a").length();
+                $(".img-container").css("width", container_width);
+            });
+            svgeezy.init(false, 'png');
+        </script>
+
+        <script type='text/javascript'>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-19971107-2']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
+</html>
