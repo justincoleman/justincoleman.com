@@ -6,3 +6,5 @@ node_modules/*
 .codekite-cache
 .sass-cache
 config.codekit
+.ftppass
+tasks/options/sftp-deploy.js
