@@ -1,0 +1,198 @@
+doctype html
+html(lang="en")
+  head
+    meta(name="viewport", content="initial-scale=1.0")
+    title="Justin Coleman - Front-end Developer"
+    link(href='assets/css/main.css', rel='stylesheet')
+  body
+    -var selected = 'Home';
+
+    include ./src/includes/topnav.jade
+    main(role="main")
+      header#header.header(role="banner")
+        div.header--centered
+          h1 Justin Coleman
+          h3 front-end developer
+          hr
+          p HTML5 &bull; CSS3 &bull; Sass &bull; JavaScript &bull; jQuery &bull; Jade &bull; Bootstrap &bull; Gulp &bull; Wordpress &bull; Git &bull; SVN
+          div.header__arrow
+            a(href="#portfolio")
+        div.header--mask
+      div#portfolio.portfolio.cf
+        ul
+          li.portfolio__item
+            a.hide--md(href="http://lankyliving.com", target="_blank")
+            div.portfolio__description
+              a.portfolio__description--btn.btn.btn--medium.btn--secondary(href="http://lankyliving.com", target="_blank") View Project
+            img(src="assets/img/portfolio/ll.png").portfolio__image
+            span.portfolio__overlay
+              p.portfolio__overlay--text HTML5 / CSS3 / Wordpress / Responsive / jQuery
+          li.portfolio__item
+            a.hide--md(href="http://quoteroper.com", target="_blank")
+            div.portfolio__description
+              a.portfolio__description--btn.btn.btn--medium.btn--secondary(href="http://quoteroper.com", target="_blank") View Project
+            img(src="assets/img/portfolio/qr.png").portfolio__image
+            span.portfolio__overlay
+              p.portfolio__overlay--text HTML5 / CSS3 / Responsive
+          li.portfolio__item
+            a.hide--md(href="http://caringo.com", target="_blank")
+            div.portfolio__description
+              a.portfolio__description--btn.btn.btn--medium.btn--secondary(href="http://caringo.com", target="_blank") View Project
+            img(src="assets/img/portfolio/caringo.png").portfolio__image
+            span.portfolio__overlay
+              p.portfolio__overlay--text HTML5 / CSS3 / jQuery / Responsive
+          li.portfolio__item
+            a.hide--md(href="http://thought-drop.com", target="_blank")
+            div.portfolio__description
+              a.portfolio__description--btn.btn.btn--medium.btn--secondary(href="http://thought-drop.com", target="_blank") View Project
+            img(src="assets/img/portfolio/td.png").portfolio__image
+            span.portfolio__overlay
+              p.portfolio__overlay--text HTML5 / CSS3 / jQuery / Responsive
+          li.portfolio__item
+            a.hide--md(href="http://#.com", target="_blank")
+            div.portfolio__description
+              a.portfolio__description--btn.btn.btn--medium.btn--secondary(href="#", target="_blank") View Project
+            img(src="assets/img/portfolio/pkp.png").portfolio__image
+            span.portfolio__overlay
+              p.portfolio__overlay--text HTML5 / CSS3 / jQuery / PHP
+          li.portfolio__item
+            a.hide--md(href="http://#.com", target="_blank")
+            div.portfolio__description
+              a.portfolio__description--btn.btn.btn--medium.btn--secondary(href="#", target="_blank") View Project
+            img(src="assets/img/portfolio/css-spinners.png").portfolio__image
+            span.portfolio__overlay
+              p.portfolio__overlay--text CSS3 / Responsive
+          li.portfolio__item
+            a.hide--md(href="http://#.com", target="_blank")
+            div.portfolio__description
+              a.portfolio__description--btn.btn.btn--medium.btn--secondary(href="#", target="_blank") View Project
+            img(src="assets/img/portfolio/tge.png").portfolio__image
+            span.portfolio__overlay
+              p.portfolio__overlay--text HTML5 / CSS3 / JavaScript
+          li.portfolio__item
+            a.hide--md(href="http://stayawakedesign.com", target="_blank")
+            div.portfolio__description
+              a.portfolio__description--btn.btn.btn--medium.btn--secondary(href="http://stayawakedesign.com", target="_blank") View Project
+            img(src="assets/img/portfolio/sad.png").portfolio__image
+            span.portfolio__overlay
+              p.portfolio__overlay--text HTML5 / CSS3 / jQuery
+          //- li.portfolio__item
+          //-   div.portfolio__description
+                  a.portfolio__description--btn.btn.btn--medium.btn--secondary View Project
+          //-   img(src="assets/img/perth.png").portfolio__image
+                span.portfolio__overlay
+                  p.portfolio__overlay--text #[strong HTML/CSS/Wordpress]
+
+      div#about.about.cf
+        div.about__text-cntr
+          h2.about__title.reversed Howdy!
+          p.about__text As you may, or may not, have gathered my name is Justin Coleman. I'm a front-end developer based out of Austin, Texas.
+          p.about__text My passion is in bridging the gap between designers and developers. My grasp of design methodologies, coupled with my experience writing front-end code lets me understand both sides and bring the two closer together creating a smoother workflow.
+          p.about__text I thoroughly enjoy building mobile-first, responsive websites and applications. I have applied my skills in numerous fields including e-commerce, non-profit, big data and agency work.
+          p
+            a(href="about.html").btn.btn--primary.btn--large Read more!
+
+      div#experience.experience
+        h2.experience__header Professonal Timeline
+        h3.experience__date 2016
+        ul.experience__timeline.cf
+          li.experience__job.wow
+            div.experience__label
+              div.experience__details
+                p.experience__details--title Front-end Developer
+                p.experience__details--company #[strong Caringo]
+                p.experience__details--dates April 2012 - Current
+              div.experience__description
+                p In my role at Caringo I am primarily responsible for bridging the gap between the design and development sides of the UI team. I am also tasked with nearly all CSS styling across multiple projects.
+          li.experience__job.wow
+            div.experience__label
+              div.experience__details
+                p.experience__details--title Front-end Developer
+                p.experience__details--company #[strong BuildASign]
+                p.experience__details--dates Feb. 2012 - April 2012
+              div.experience__description
+                p In February of 2012 I was promoted at BuildASign and tasked with more responsibilities including leading the front-end build out of new features for existing sites, leading the front-end development of new properties and continued to work on most of the companies critical HTML emails, among other tasks.
+          li.experience__job.wow
+            div.experience__label
+              div.experience__details
+                p.experience__details--title Jr. Front-end Developer
+                p.experience__details--company #[strong BuildASign]
+                p.experience__details--dates Mar. 2011 - Feb. 2012
+              div.experience__description
+                p At BuildASign I worked as a junior developer handling almost all of the companies HTML email campaigns, fixing bugs on the companies various websites and assisting with building new sites.
+          li.experience__job.wow
+            div.experience__label
+              div.experience__details
+                p.experience__details--title Web Production Specialist
+                p.experience__details--company #[strong TASB]
+                p.experience__details--dates Aug. 2010 - Feb. 2011
+              div.experience__description
+                p In my role at the Texas Association of School Boards I was tasked with numerous jobs including, but not limited to: e-mail newsletter development, 3rd party e-commerce site integration, web application development, and best-practices research.
+          li.experience__job.wow
+            div.experience__label
+              div.experience__details
+                p.experience__details--title Front-end Developer
+                p.experience__details--company #[strong Freelance]
+                p.experience__details--dates May 2010 - Dec. 2010
+              div.experience__description
+                p After college I used my newfound skillset to work with a handful of local (Austin, TX) web design/development agencies in helping them build out sites for clients.
+          li.experience__dateline
+        h3.experience__date 2010
+
+      div#skills.skills.cf
+        h2.skills__header Skills
+        div
+          p Here is where I feel my skillset is, in ambigious chart form, for a few selected technologies that might interest you. As you can see, I feel strongest in (and favor) HTML, CSS, Sass and jQuery.
+          ul
+            li
+              div.skills__level
+                span.skills__bar.skills__bar--no-val.skills__bar--html
+                p.skills__label HTML
+            li
+              div.skills__level
+                span.skills__bar.skills__bar--no-val.skills__bar--css
+                p.skills__label CSS
+            li
+              div.skills__level
+                span.skills__bar.skills__bar--no-val.skills__bar--js
+                p.skills__label JavaScript
+            li
+              div.skills__level
+                span.skills__bar.skills__bar--no-val.skills__bar--sass
+                p.skills__label Sass
+            li
+              div.skills__level
+                span.skills__bar.skills__bar--no-val.skills__bar--jade
+                p.skills__label Jade
+            li
+              div.skills__level
+                span.skills__bar.skills__bar--no-val.skills__bar--gulp
+                p.skills__label Gulp
+            li
+              div.skills__level
+                span.skills__bar.skills__bar--no-val.skills__bar--git
+                p.skills__label Git
+            li
+              div.skills__level
+                span.skills__bar.skills__bar--no-val.skills__bar--svn
+                p.skills__label SVN
+            li
+              div.skills__level
+                span.skills__bar.skills__bar--no-val.skills__bar--bootstrap
+                p.skills__label Bootstrap
+
+      div#education.education
+        h2.education__header Education
+        h4 #[strong The University of Texas at Arlington]
+        ul.education__facts
+          li.education__item #[strong Years]: 2006 - 2010
+          li.education__item #[strong Major]: Communication Technology
+          li.education__item #[strong GPA]: 3.8(overall) | 4.0(major)
+          li.education__item #[strong Honors]:
+            ul.indent
+              li Summa Cum Laude
+              li Phi Kappa Phi Honor Society
+
+      include ./src/includes/footer.jade
+
+    script(src='assets/js/main.js')

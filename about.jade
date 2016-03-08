@@ -1,0 +1,71 @@
+doctype html
+html(lang="en")
+  head
+    -var selected = 'About'; //default
+
+    meta(name="viewport", content="initial-scale=1.0")
+    title="About Me!"
+    link(href='assets/css/main.css', rel='stylesheet')
+  body
+
+    include ./src/includes/topnav.jade
+    main(role="main")
+      header#header.header.header--small(role="banner")
+        div.header--centered
+          h1 Justin Coleman
+        div.header--mask
+
+      div#about.about.about--more.cf
+        h2 About Me
+        p.
+          Currently I live and work in beautiful Austin, Texas at Caringo, a cloud-based object storage company. At Caringo I am a part of the relatively new User Interface team. I focus mostly on the CSS/Sass side of things and bridge the gap between design and back-end development. Our goal on the UI team is to create beautiful front-end interfaces for numerous projects within the company that have long lived as command line only applications.
+        p.
+          Outside of work I like to spend my free time working with friends on exploring new opportunities to see what we can build and put out into the world. So far these experiments have led to things like #[a(href="http://thought-drop.com", target="_blank") Thought Drop], #[a(href="http://lankyliving.com", target="_blank") Lanky Living] and #[a(href="http://quoteroper.com", target="_blank") Quote Roper]. It's a great way to scratch my entrepreneurial itch while also continuing to level up my front-end abilities.
+        p.
+          In addition to work and my entrepreneurial activities I enjoy a variety of other things including spending way too much time at the movie theater, watching sports (Go Dodgers/Eagles/Lakers/Longhorns!) and taking my dogs on long and random walks. I'm also a big car guy. I love to drive my car as often as possible and I love to spot and photograph all of the amazing cars driving around Austin.
+
+        h2 About My Tools
+        h4 Hardware
+        p.
+          I work exclusively on a 2015 Retina Macbook Pro with 16GB of RAM and a 500GB SSD. It's an awesome machine that has served me well. When I am at home I work at my sit/stand desk from #[a(href="https://www.autonomous.ai/desk", target="_blank") Autonomous]. If I am sitting I use a #[a(href="http://www.hermanmiller.com/products/seating/performance-work-chairs/embody-chairs.html", target="_blank") Herman Miller Embody] chair. When docked, my machine is connected to a 27-inch Apple Cinema Display, a #[a(href="http://www.amazon.com/dp/B00CYX26BC/", target="_blank") Microsoft Sculpt ergonomic keyboard] and a #[a(href="http://www.amazon.com/Logitech-Master-Wireless-Mouse-910-004337/dp/B00TZR3WRM/", target="_blank") Logitech MX Master] mouse.
+        h4 Development
+        p.
+          I use #[a(href="https://www.sublimetext.com/", target="_blank") Sublime Text] for my editor (with the wonderful #[a(href="http://www.cufonfonts.com/en/font/13494/menlo", target="_blank") Menlo font] and #[a(href="https://github.com/YabataDesign/afterglow-theme", target="_blank") Afterglow theme]), the default OS X terminal, #[a(href="https://imageoptim.com/", target="_blank") ImageOptim] and #[a(href="https://panic.com/transmit/", target="_blank") Transmit] (for FTP and S3). I also tend to keep #[a(href="http://xscopeapp.com/", target="_blank") xScope] open to make sure things are lined up just perfectly.
+
+        p For documentation of any variety I have found #[a(href="https://kapeli.com/dash", target="_blank") Dash] indispensable. The ability to store all of the docs you use most frequently locally on your machine is great.
+
+        h4 Design
+        p.
+          Any time I need to design something I jump straight into #[a(href="https://www.sketchapp.com/", target="_blank") Sketch] which is, in my opinion, the best tool out right now for creating for mobile and the web. And if you are using Sketch then you also need to install #[a(href="http://sketchtoolbox.com/", target="_blank") Sketch Toolbox] ASAP.
+        p.
+          When I need to create a wireframe for something I use #[a(href="https://balsamiq.com/", target="_blank") Balsamiq] which seems like a pretty standard choice at the moment. For anything color related I rely on #[a(href="http://www.colourlovers.com/", target="_blank") ColourLovers] and the Mac app #[a(href="https://couleursapp.com/", target="_blank") Couleurs].
+
+
+        h4 Other Stuff
+        p These are other tools/services/apps I use most frequently on my machines, either for work or for fun: #[a(href="http://github.com", target="_blank") Github] (for fun), #[a(href="http://bitbucket.org", target="_blank") BitBucket] (for work), #[a(href="http://tapbots.com/tweetbot/", target="_blank") Tweetbot], #[a(href="http://slack.com", target="_blank") Slack], #[a(href="https://www.sparklabs.com/viscosity/", target="_blank") Viscosity] (for VPNing) and #[a(href="https://justgetflux.com/", target="_blank") Flux] (to keep my eyes going).
+
+
+        h4 About This Website
+        p.
+          The HTML for this site was initially written in #[a(href="http://jade-lang.com/", target="_blank") Jade]. The CSS started out as #[a(href="http://sass-lang.com/", target="_blank") Sass] (SCSS to be specific). Both of those plus the JavaScript were compiled and compressed using my #[a(href="http://gulpjs.com/", target="_blank") Gulp] build script. That same script also optimizes any images used on the site. You can find my #[a(href="#", target="_blank") Gulpfile] on Github. Feel free to use it and modify it suit your needs.
+        p.
+          I followed the #[a(href="", target="_blank") BEM] methodology when writing my HTML and CSS in order to try and keep things modular and understandable going forward. If you look through my source code you will see lots of classes and lots of hyphens and underscores, a telltale sign of BEM. An example would be:
+        code.code__block.
+          &lt;p&gt;
+            #[br]
+            &nbsp; &lt;a href="about.html" class="btn btn--primary btn--large"&gt;Read more!&lt;/a&gt;
+            #[br]
+          &lt;/p&gt;
+        p.
+          The only code I didn't write myself for this website was provided by the following wonderful people:
+        ul
+          li
+            a(href="https://jquery.com/", target="_blank") jQuery
+          li
+            a(href="http://mynameismatthieu.com/WOW/", target="_blank") WOW.JS
+        p.
+          The fonts used here are Open Sans via Google Fonts and Future. My domain was purchased using #[a(href="http://namecheap.com", target="_blank") NameCheap.com] whom I highly recommend and it is hosted on #[a(href="https://mediatemple.net/", target="_blank") MediaTemple].
+
+      include ./src/includes/footer.jade
+
+    script(src='assets/js/main.js')

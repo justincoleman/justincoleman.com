@@ -1,0 +1,10 @@
+-var menu = { 'Home': 'index.html', 'About': 'about.html', 'Codepen': '#' };
+
+nav.menu
+  ul
+    each val, key in menu
+      li.menu__item
+        if selected === key
+          a.menu__link.menu__link--selected(href=val, title=key)= key
+        else
+          a.menu__link(href=val, title=key)= key

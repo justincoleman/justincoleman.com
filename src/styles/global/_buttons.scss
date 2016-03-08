@@ -1,0 +1,68 @@
+/*
+#  .______    __    __  .___________..___________.  ______   .__   __.      _______.
+#  |   _  \  |  |  |  | |           ||           | /  __  \  |  \ |  |     /       |
+#  |  |_)  | |  |  |  | `---|  |----``---|  |----`|  |  |  | |   \|  |    |   (----`
+#  |   _  <  |  |  |  |     |  |         |  |     |  |  |  | |  . `  |     \   \
+#  |  |_)  | |  `--'  |     |  |         |  |     |  `--'  | |  |\   | .----)   |
+#  |______/   \______/      |__|         |__|      \______/  |__| \__| |_______/
+#
+*/
+
+.btn {
+    border: none;
+    border-radius: 30px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 10px 30px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+    &:hover, &:active, &:focus {
+        cursor: pointer;
+        outline: none;
+    }
+    &:hover {
+        background: black;
+        color: white;
+        text-decoration: none;
+    }
+
+    &--primary {
+        border: 4px solid white;
+        color: white;
+        background: $green;
+        font-weight: 400;
+        display: block;
+
+        &:hover {
+            background: darken($green, 20%);
+        }
+    }
+    &--secondary {
+        border: 4px solid $green;
+        color: $green;
+        background: white;
+        font-weight: 400;
+
+        &:hover {
+            background: $green;
+            color: white;
+        }
+    }
+
+    &--large {
+        height: 60px;
+        font-size: 1.3rem;
+    }
+    &--medium {
+        height: 45px;
+        font-size: 1.1rem;
+        padding: 5px 30px;
+    }
+    &--small {
+        height: 30px;
+        padding: 0 30px;
+        font-size: 0.8rem;
+    }
+}

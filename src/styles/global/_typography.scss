@@ -1,0 +1,140 @@
+/*
+#  .___________.____    ____ .______    _______
+#  |           |\   \  /   / |   _  \  |   ____|
+#  `---|  |----` \   \/   /  |  |_)  | |  |__
+#      |  |       \_    _/   |   ___/  |   __|
+#      |  |         |  |     |  |      |  |____
+#      |__|         |__|     | _|      |_______|
+#
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media (min-width: 37.5em) { // width: 600px
+        & {
+            font-size: 44.8px;
+            font-size: 2.8rem
+        }
+    }
+    @media (min-width: 56.25em) { // width: 900px
+        & {
+            font-size: 72px;
+            font-size: 4.5rem
+        }
+    }
+    @media (min-width: 75em) { // width: 1200px
+        & {
+            font-size: 107.2px;
+            font-size: 6.7rem
+        }
+    }
+}
+
+h2 {
+    font-size: 22.4px;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: $green;
+
+    @media (min-width: 37.5em) { // width: 600px
+        & {
+            font-size: 32px;
+            font-size: 2rem
+        }
+    }
+    @media (min-width: 56.25em) { // width: 900px
+        & {
+            font-size: 48px;
+            font-size: 3rem
+        }
+    }
+    @media (min-width: 75em) { // width: 1200px
+        & {
+            font-size: 56px;
+            font-size: 3.5rem
+        }
+    }
+}
+
+h3 {
+    font-size: 17.6px;
+    font-size: 1.1rem;
+
+    @media (min-width: 37.5em) { // width: 600px
+        & {
+            font-size: 32px;
+            font-size: 2rem
+        }
+    }
+    @media (min-width: 56.25em) { // width: 900px
+        & {
+            font-size: 48px;
+            font-size: 3rem
+        }
+    }
+    @media (min-width: 75em) { // width: 1200px
+        & {
+            font-size: 56px;
+            font-size: 3.5rem
+        }
+    }
+}
+
+h4 {
+    font-size: 17.6px;
+    font-size: 1rem;
+
+    @media (min-width: 37.5em) { // width: 600px
+        & {
+            font-size: 25.6px;
+            font-size: 1.6rem
+        }
+    }
+    @media (min-width: 56.25em) { // width: 900px
+        & {
+            font-size: 38.6px;
+            font-size: 2.4rem
+        }
+    }
+    @media (min-width: 75em) { // width: 1200px
+        & {
+            font-size: 43.2px;
+            font-size: 2.7rem
+        }
+    }
+}
+
+
+p {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @media (min-width: 37.5em) { // width: 600px
+        & {
+            font-size: 17.6px;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $green;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
