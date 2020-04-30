@@ -1,0 +1,22 @@
+// 3rd Party Styles
+@import "libs/normalize";
+@import "libs/animate";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+// Global Styles
+@import "global/_variables";
+@import "global/_global";
+@import "global/_mixins";
+@import "global/_helper-classes";
+@import "global/_typography";
+@import "global/_buttons";
+
+// // Blocks
+@import "blocks/_nav";
+@import "blocks/_header";
+@import "blocks/_portfolio";
+@import "blocks/_about";
+@import "blocks/_experience";
+@import "blocks/_skills";
+@import "blocks/_education";
+@import "blocks/_footer";

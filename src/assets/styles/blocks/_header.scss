@@ -1,0 +1,117 @@
+/*
+#   __    __   _______      ___       _______   _______ .______
+#  |  |  |  | |   ____|    /   \     |       \ |   ____||   _  \
+#  |  |__|  | |  |__      /  ^  \    |  .--.  ||  |__   |  |_)  |
+#  |   __   | |   __|    /  /_\  \   |  |  |  ||   __|  |      /
+#  |  |  |  | |  |____  /  _____  \  |  '--'  ||  |____ |  |\  \----.
+#  |__|  |__| |_______|/__/     \__\ |_______/ |_______|| _| `._____|
+#
+*/
+
+.header {
+    background: $blue;
+    background: darken($light-gray, 8%) url(../../images/hero2.png) no-repeat;
+    // background: linear-gradient(-180deg, $yellow 75%, $blue 100%);
+    background-size: cover;
+    color: white;
+    height: 100%;
+    overflow: hidden;
+    // padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    // padding-top: 50px;
+    // max-height: 700px;
+
+    h1 {
+        letter-spacing: 7px;
+        white-space: nowrap;
+    }
+
+    p {
+        max-width: 80%;
+        margin: 0 auto;
+        font-weight: 300;
+
+        @media (min-width: 56.25em) { // width: 900px
+            & {
+                font-size: 22.4px;
+                font-size: 1.4rem;
+            }
+        }
+        @media (min-width: 75em) { // width: 1200px
+            & {
+                font-size: 33.6px;
+                font-size: 2.1rem;
+            }
+        }
+    }
+
+    hr {
+        background: white;
+        border: none;
+        width: 60%;
+        max-width: 500px;
+        height: 1px;
+        margin: 15px auto 30px;
+    }
+
+    a {
+        display: block;
+        width: 62px;
+        height: 62px;
+        position: absolute;
+        top: -62px;
+        left: -30px;
+        z-index: 1000;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    // Elements
+    &__arrow {
+        margin: 50px auto 0;
+        width: 0;
+        height: 0;
+        border: 42px solid white;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: none;
+        animation: 0.5s ease-out alternate-reverse infinite pulse;
+
+        &:before {
+            content: '';
+            width: 20px;
+            height: 15px;
+            background: white;
+            display: inline-block;
+            transform: rotate(90deg);
+            position: relative;
+            top: -59px;
+            left: -10px;
+        }
+    }
+
+    // Modifiers
+    &--mask {
+        background: darken($yellow, 8%);
+        // background:  url(../img/px_by_Gre3g.png) repeat, linear-gradient(-180deg, darken(Aquamarine, 8%) 43%, lighten(Aquamarine, 5%) 100%);
+        background: linear-gradient(-180deg, $blue 75%, darken($blue, 25%) 100%);
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+    }
+
+    &--centered {
+        @include vertical-align;
+        z-index: 1;
+    }
+
+    &--small {
+        height: 200px;
+    }
+}

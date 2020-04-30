@@ -1,0 +1,71 @@
+/*
+#   _______  _______   __    __    ______      ___      .___________. __    ______   .__   __.
+#  |   ____||       \ |  |  |  |  /      |    /   \     |           ||  |  /  __  \  |  \ |  |
+#  |  |__   |  .--.  ||  |  |  | |  ,----'   /  ^  \    `---|  |----`|  | |  |  |  | |   \|  |
+#  |   __|  |  |  |  ||  |  |  | |  |       /  /_\  \       |  |     |  | |  |  |  | |  . `  |
+#  |  |____ |  '--'  ||  `--'  | |  `----. /  _____  \      |  |     |  | |  `--'  | |  |\   |
+#  |_______||_______/  \______/   \______|/__/     \__\     |__|     |__|  \______/  |__| \__|
+#
+*/
+
+.education {
+    color: $blue;
+    font-weight: 500;
+    padding: 20px;
+    background: white;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    // margin-top: 20px;
+
+    &__header {
+        @extend %section__header;
+        padding: 0 0 20px;
+    }
+    &__facts {
+        font-size: 17.6px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        width: 100%;
+
+        @media (min-width: 56.25em) { // width: 900px
+            & {
+                width: 280px;
+                margin: 0 auto;
+                text-align: left;
+            }
+        }
+    }
+    &__item {
+        line-height: 2;
+        list-style-type: circle;
+        margin-left: 20px;
+
+        @media (min-width: 56.25em) { // width: 900px
+            & {
+                margin-left: 0;
+            }
+        }
+
+        strong {
+            font-weight: 600;
+        }
+    }
+
+    @media (min-width: 37.5em) { // width: 600px
+        & {
+            background: white url(../../images/education_bg.png) bottom right no-repeat;
+            background-size: 30%;
+        }
+    }
+    @media (min-width: 56.25em) { // width: 900px
+        & {
+            background-size: 22%;
+            text-align: center;
+        }
+    }
+    @media (min-width: 75em) { // width: 1200px
+        & {
+            background-size: 15%;
+        }
+    }
+}

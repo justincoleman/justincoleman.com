@@ -1,0 +1,19 @@
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin stylized-links {
+    border-bottom: 3px solid $blue;
+    padding: 2px 4px;
+    transition: all ease-in-out 0.5s;
+
+    &:hover {
+        background-color: $blue;
+        color: white;
+    }
+}

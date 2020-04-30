@@ -1,0 +1,79 @@
+// Use when text color needs to be white
+.reversed {
+    color: white;
+}
+
+// For indenting lists
+.indent {
+    padding-left: 20px;
+    list-style-type: circle;
+
+    li {
+        color: $blue;
+        margin-bottom: 15px;
+
+        p {
+            margin-top: 10px;
+        }
+
+        a {
+            @include stylized-links;
+        }
+    }
+}
+
+.hookem {
+    color: $hookem-orange;
+}
+
+
+.hide {
+    display: none;
+
+    @media (min-width: 37.5em) { // width: 900px
+        &--sm {
+            display: none;
+        }
+    }
+    @media (min-width: 56.25em) { // width: 900px
+        &--md {
+            display: none;
+        }
+    }
+    @media (min-width: 75em) { // width: 900px
+        &--lg {
+            display: none;
+        }
+    }
+}
+
+
+// Float an element left
+.pull-left {
+    float: left;
+}
+
+// Float an element right
+.pull-right {
+    float: right;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+// Clearfix
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
