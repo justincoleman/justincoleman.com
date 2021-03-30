@@ -21,7 +21,7 @@ const Experience = () => {
                 <li className="experience__job wow slideInLeft">
                     <div className="experience__label">
                         <div className="experience__details">
-                            <p className="experience__details--title"><strong>Front-end Developer</strong></p>
+                            <p className="experience__details--title"><strong>UX Developer</strong></p>
                             <p className="experience__details--company">Caringo</p>
                             <p className="experience__details--dates">April 2012 - October 2016</p>
                         </div>

@@ -5,9 +5,9 @@ const Hero = () => {
         <header id="header" role="banner" className="header">
             <div className="header--centered">
                 <h1>Justin Coleman</h1>
-                <h3>front-end developer</h3>
+                <h3>front-end designer</h3>
                 <hr />
-                <p>HTML5 • CSS3 • Scss • JavaScript • React • Vue • CSS Grid • Flexbox • Bootstrap • Node.JS • Gulp • Wordpress • Git • NPM • SVN • jQuery</p>
+                <p>HTML • CSS • Sass • JavaScript • CSS Grid • Flexbox • Gulp • Wordpress • Git • React • Vue • Bootstrap • Node.JS • NPM • SVN • jQuery</p>
                 <div className="header__arrow"><a href="#portfolio">&nbsp;</a></div>
             </div>
             <div className="header--mask"></div>

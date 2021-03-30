@@ -8,7 +8,7 @@ import AboutMe from '../../components/AboutMe/AboutMe';
 
 import Footer from '../../components/Footer/Footer';
 
-const Home = () => {
+const Home = ({onRouteChange}) => {
     return (    
         <main>
             <Hero />

@@ -16,7 +16,7 @@ class App extends Component {
       activePage: 'home'
     }
   }
-
+  
   onRouteChange = (route) => {
     if (route === 'home') {
       this.setState({activePage: 'home'});
@@ -34,6 +34,8 @@ class App extends Component {
 
   render() {
     const { view, activePage } = this.state;
+
+    console.log("page:", activePage);
 
     // if (route === 'home') {
     //   view = <Home />;
