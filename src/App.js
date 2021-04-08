@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useParams } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
 import Home from './containers/Home/Home';
 import About from './containers/About/About';
@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.onRouteChange(window.location.pathname.match(/([0-9a-z]+)/)[0]);
+    this.onRouteChange(window.location.pathname.replace('/','').replace('/',''));
   }
 
   onRouteChange = (route) => {
@@ -27,7 +27,9 @@ class App extends Component {
     } else if (route === 'labs') {
       this.setState({activePage: 'labs'});
     }
+    console.log("route", route);
   }
+
 
   render() {
     const { activePage } = this.state;
