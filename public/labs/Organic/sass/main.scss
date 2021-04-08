@@ -1,0 +1,28 @@
+// Helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// Base Styles
+@import "base/normalize";
+@import "base/typography";
+
+// Components
+@import "components/buttons";
+@import "components/cover";
+@import "components/dropdown";
+@import "components/navigation";
+
+// Layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+@import "layout/forms";
+
+// Vendors
+footer {
+  background-color: $red;
+  @include clearfix;
+  @include sticky-footer();
+}

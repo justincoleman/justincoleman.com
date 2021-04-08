@@ -1,0 +1,145 @@
+header {
+  background: $blue url(../images/header_bg.png);
+  height: 550px;
+  color: $white;
+
+  h1, h2, .button {
+    float: right;
+    clear: right;
+  }
+
+  h1 {
+    background: url(../images/header_text.png) no-repeat;
+    text-indent: -999em;
+    width: 303px;
+    height: 71px;
+    margin-bottom: 20px;
+  }
+}
+
+.main {
+  display: block;
+  background: url(../images/flat_iphone.png) no-repeat 10% bottom;
+  height: 100%;
+}
+
+#logo {
+  background: url(../images/logo.png);
+  display: block;
+  width: 114px;
+  height: 115px;
+
+  a {
+    display: block;
+    height: 100%;
+  }
+}
+
+.hamburger {
+  width: 40px;
+  height: 25px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .line {
+    width: 40px;
+    height: 5px;
+    background: $white;
+    border-radius: 5px;
+    border: 1px solid $white;
+    display: block;
+    margin: 0 0 5px;
+  }
+}
+
+.navigation {
+  display: none;
+  @include coverer;
+  background: #e47f85;
+  background-image: none;
+  opacity: 0.9;
+  height: 550px;
+
+  .close {
+    position: absolute;
+    top: 18px;
+    right: 9.8%;
+    font-size: 2em;
+    width: 43px;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  nav {
+    width: 15%;
+    margin: 0 auto;
+    position: relative;
+    top: 130px;
+  }
+  nav li {
+    margin: 0 0 20px;
+    width: 230px;
+    height: 58px;
+  }
+  nav .icon {
+    background-image: url(../images/nav_icons.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 60px;
+    height: 70px;
+    margin: 0 10px -35px 0;
+  }
+  .home { background-position: 5px 3px; }
+  .about { background-position: -53px 3px; }
+  .portfolio { background-position: -111px 3px; }
+  .contact { background-position: -169px 3px; }
+
+  nav a {
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    height: 100%;
+    font-style: italic;
+    transition: all .2s ease-in;
+
+    &:hover {
+      background-color: darken($pink, 20);
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  header {
+    section {
+      text-align: center;
+    }
+    .button, h1, h2 {
+      float: none;
+      clear: none;
+    }
+    h1 {
+      margin: 0 auto 20px;
+    }
+    .button {
+      display: block;
+      width: 68%;
+      margin: 30px auto 0;
+    }
+  }
+  .navigation {
+    nav {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+<div class="row content">
+  <div class="btn-group btn-group-justified hidden-xs" class="nav nav-tabs" role="tablist">
+    <div class="btn-group" role="group" ng-repeat="day in workoutDays.days">
+      <button type="button" ng-class="day.isActive ? 'active' : ''" active="day.isActive" class="btn btn-default"  href="#{{day.name}}" aria-controls="{{day.name}}" role="tab" data-toggle="tab" ng-click="setActiveNav($event)">{{day.name}}</button>
+    </div>
+  </div>
+
+  <div class="dropdown visible-xs-block">
+    <button class="btn btn-default dropdown-toggle" type="button" role="tablist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Days
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li ng-repeat="day in workoutDays.days"><a href="#{{day.name}}" aria-controls="{{day.name}}" data-toggle="tab">{{day.name}}</a></li>
+    </ul>
+  </div>
+
+  <!-- Tab panes -->
+  <div class="tab-content clearfix">
+    <div ng-repeat="day in workoutDays.days"" role="tabpanel" active="day.isActive" class="tab-pane" ng-class="{{day.isActive}} ? 'active' : ''" id="{{day.name}}">
+
+      <h1 class="clearfix">{{day.name}} <span class="pull-right"><button class="btn btn-warning" ng-click="revertBtn()">Reset Week</button></span></h1>
+
+      <div class="panel {{zone.counter == zone.workout.length ? 'panel-success': 'panel-default' }} clearfix" ng-repeat="zone in day.zones">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            {{zone.name}} <span class="pull-right badge badge-info">{{zone.counter}}/{{zone.workout.length}}</span>
+          </h3>
+        </div>
+        <div class="panel-body" ng-class="{'bg-success': zone.counter == zone.workout.length}">
+          <ul class="list-group">
+            <li class="list-group-item col-md-12 clearfix" ng-repeat="workout in zone.workout">
+
+              <div class="checkbox col-xs-11">
+                <label ng-class="workout.completed ? 'done' : ''">
+                  <input type="checkbox" ng-model="counter" ng-change="change(workout, zone.id, $parent.$index)" ng-click="workout.completed = !workout.completed" ng-checked="workout.completed" ng-class="workout.completed ? 'ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched' : ''" id="input{{zone.id}}{{$parent.$parent.$index}}{{$index}}">
+                  <b>{{workout.title}}</b>
+                  <div ng-if="workout.duration != ''">Duration: {{workout.duration}}</div>
+                  <div ng-if="workout.sets != ''">Sets: {{workout.sets}}</div>
+                  <div ng-if="workout.reps != ''">Reps: {{workout.reps}}</div>
+                  <div ng-if="workout.rest != ''">Rest: {{workout.rest}}</div>
+                </label>
+              </div>
+
+              <div class="col-xs-1 no-pad-left no-pad-right text-right" ng-if="workout.img_path != undefined">
+                <button class="btn btn-link btn-md" data-toggle="modal" data-target="#imageModal{{zone.id}}{{$parent.$parent.$index}}{{$index}}"><i class="glyphicon glyphicon-info-sign"></i></button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="imageModal{{zone.id}}{{$parent.$parent.$index}}{{$index}}" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-left" id="imageModalLabel">{{workout.title}}</h4>
+                      </div>
+                      <div class="modal-body">
+                        <img ng-src="{{workout.img_path}}" alt="{{workout.title}}">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

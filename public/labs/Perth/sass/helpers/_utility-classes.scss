@@ -1,0 +1,17 @@
+// Helper Classes
+
+.float-left { float: left; }
+.float-right { float: right; }
+
+.strong {
+  font-weight: bold;
+}
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
