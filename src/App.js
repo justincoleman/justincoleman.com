@@ -27,7 +27,6 @@ class App extends Component {
     } else if (route === 'labs') {
       this.setState({activePage: 'labs'});
     }
-    console.log("route", route);
   }
 
 
