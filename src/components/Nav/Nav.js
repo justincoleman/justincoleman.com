@@ -21,14 +21,14 @@ const Header = ({ onRouteChange, activePage }) => {
                 >About</button>
             </Link>
           </li>
-          <li className="menu__item">
+          {/* <li className="menu__item">
             <Link to="/labs">
                 <button
                     onClick={() => onRouteChange('labs')}
                     className={`menu__link ${activePage === 'labs' ? 'menu__link--selected' : ''}`}
                 >Labs</button>
             </Link>
-          </li>
+          </li> */}
         </ul>
     </nav>
     );

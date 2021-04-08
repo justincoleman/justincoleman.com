@@ -1,1 +1,0 @@
-var app=angular.module("baseballTerms",[]);$(document).ready(function(){$(".search-box").click(function(){var a=$(this).value;""!==a&&$(this).attr("placeholder","")})});

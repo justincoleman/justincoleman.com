@@ -1,1 +1,0 @@
-app.controller("filterCtrl",["$scope","terms",function(t,e){t.items=e}]);
