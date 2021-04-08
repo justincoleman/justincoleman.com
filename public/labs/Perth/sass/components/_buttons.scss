@@ -1,0 +1,49 @@
+.button {
+  border: 2px solid $white;
+  border-radius: 2px;
+  padding: 18px 59px 18px 35px;
+  color: #fff;
+  text-decoration: none;
+  margin: 25px 0 0 0;
+  text-transform: uppercase;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover { text-decoration: none; }
+
+  &.download {
+    background: url(../images/button_icon_download.png) no-repeat 83%;
+
+    &:hover {
+      background-color: darken($blue, 15);
+    }
+  }
+
+  &.contact {
+    background: url(../images/button_icon_contact.png) no-repeat 83%;
+    border-color: $green;
+    color: $green;
+
+    &:hover {
+      background-color: darken($gray, 10);
+
+    }
+  }
+
+  &.dribbble {
+    background-color: $white;
+    border-color: $pink;
+    color: $pink;
+
+    &:hover {
+      background-color: darken($white, 5);
+    }
+  }
+
+  &.beer {
+    background: url(../images/button_icon_beer.png) no-repeat 83%;
+    &:hover {
+      background-color: darken($green, 5);
+    }
+  }
+}

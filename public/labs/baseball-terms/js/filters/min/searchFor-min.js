@@ -1,0 +1,1 @@
+app.filter("searchFor",function(){return function(r,n){if(!n)return r;var e=[];return n=n.toLowerCase(),angular.forEach(r,function(r){-1!==r.tags.toLowerCase().indexOf(n)&&e.push(r)}),e}});

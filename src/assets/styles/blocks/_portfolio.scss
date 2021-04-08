@@ -12,6 +12,8 @@
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     overflow: hidden;
+    margin: 0 auto;
+    max-width: 1800px;
 
     .box {
         position: relative;
@@ -45,7 +47,7 @@
                 bottom: 20px;
             }
         }
-        
+
         &:hover {
             cursor: pointer;
             // transform: rotate(random(1)+deg);

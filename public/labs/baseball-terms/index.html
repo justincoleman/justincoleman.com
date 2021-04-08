@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>What's a BABIP?</title>
+  <link rel="stylesheet" href="css/screen.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.4/angular.min.js" type="text/javascript"
+  charset="utf-8"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-beta1/jquery.min.js" type="text/javascript"
+  charset="utf-8"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="baseballTerms">
+  <header id="header" class="">
+    <h1>What's a BABIP?</h1>
+
+    <div class="intro">
+      <h4><strong>Baseball geeks love advanced stats. They will mock you for citing things such as ERA.</strong></h4>
+      <p>Use this simple search engine to decipher your baseball loving friends annoying jargon!</p>
+    </div>
+  </header><!-- /header -->
+  <div class="wrapper" ng-controller="filterCtrl">
+    <div class="bar">
+      <!-- Create a binding between the searchString model and the text field -->
+      <input class="search-box" type="text" ng-model="searchString" placeholder="Enter your search terms" />
+    </div>
+
+    <div class="results" ng-show="searchString" ng-repeat="i in items | searchFor:searchString">
+      <h3 class="title">{{i.title}}</h3>
+      <p class="definition">{{i.definition}}</p>
+      <!-- <cite>{{i.sentence}}</cite> -->
+    </div>
+  </div>
+  <footer>
+    <small>Definitions provided by FanGraphs and MLB</small>
+  </footer>
+
+  <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/controllers/filterCtrl.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/filters/searchFor.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/services/terms.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

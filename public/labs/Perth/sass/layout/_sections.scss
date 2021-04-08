@@ -1,0 +1,191 @@
+* { box-sizing: border-box; }
+
+html, body, ul {
+    margin: 0;
+    padding: 0;
+}
+section {
+  height: auto;
+
+  &.about {
+    background: #f4f4f4 url(../images/about_bg.png) no-repeat right bottom;
+    color: #545454;
+    padding: 95px 0 95px 0;
+
+    .block {
+      padding-right: 20%;
+    }
+  }
+
+  &.portfolio {
+    background: $white url(../images/portfolio_bg.png) no-repeat left bottom;
+    padding: 95px 0 95px 0;
+
+    .block {
+      padding-left: 35%;
+    }
+  }
+
+  &.callout {
+    background: $green url(../images/donate_bg.png);
+    color: $white;
+    height: 325px;
+    text-align: center;
+
+    .block {
+      position: relative;
+      top: 100px;
+    }
+    h2 {
+      margin: 0 0 50px;
+    }
+  }
+
+  &.social {
+    background: $gray;
+    height: 400px;
+
+    .icons, form {
+      position: relative;
+      top: 120px;
+      margin: 0 auto 60px;
+      width: 29%;
+    }
+
+    form {
+      width: 39%;
+    }
+
+    label {
+      text-decoration: italic;
+      margin: 0 20px 0 0;
+    }
+    input[type="text"] {
+      height: 43px;
+      width: 50%;
+      border-radius: 5px;
+      padding: 10px;
+      border: none;
+    }
+
+    input[type="submit"] {
+      margin-left: -40px;
+      height: 35px;
+      width: 33px;
+      background: $white url(../images/form_bg.png) no-repeat 8px 11px;
+      border: none;
+      position: relative;
+      top: 9px;
+      border-left: 1px solid $gray;
+    }
+
+    ul li {
+      float: left;
+      margin: 0 30px 0 0;
+    }
+    ul li:last-child {
+      margin: 0;
+    }
+
+    .icon {
+      background-image: url(../images/social_icons.png);
+      display: block;
+      width: 58px;
+      height: 58px;
+      text-indent: -999em;
+    }
+    .dribbble { background-position: 0 0; }
+    .facebook { background-position: 117px 0; }
+    .twitter { background-position: 59px 0; }
+    .email { background-position: -57px 0; }
+  }
+}
+.block {
+  width: 80%;
+  // max-width: 1260px;
+  margin: 0 auto;
+  position: relative;
+}
+
+// Responsive Styles
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  section {
+    &.about, &.portfolio {
+      padding: 35px 0 75px 0;
+    }
+    &.about {
+      background-size: 30%;
+    }
+    &.portfolio {
+      background-size: 73%;
+    }
+    &.callout {
+      height: 275px;
+
+      .block {
+        top: 70px;
+      }
+    }
+    &.social {
+      height: 300px;
+
+      .icons, form { top: 70px; }
+      .icons { width: 53%; }
+      form { width: 70%; }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    section {
+      &.about, &.portfolio {
+        padding: 35px 0 75px 0;
+      }
+      &.about {
+        background-size: 30%;
+
+        .block {
+          padding-right: 0;
+        }
+      }
+      &.portfolio {
+        background-size: 73%;
+
+        .block {
+          padding-left: 0;
+        }
+      }
+      &.callout {
+        height: 275px;
+
+        .block {
+          top: 70px;
+        }
+      }
+      &.social {
+        height: 300px;
+
+        .icons, form { top: 70px; }
+        .icons {
+          width: 58%;
+          margin-bottom: 0;
+
+          li:nth-child(even) {
+            margin-right: 0;
+          }
+        }
+        form {
+          width: 100%;
+          margin-top: 15px;
+          text-align: center;
+
+          label {
+            font-size: 0.9em;
+          }
+          input[type=text] { width: 90%; }
+        }
+      }
+    }
+  }

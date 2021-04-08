@@ -1,0 +1,70 @@
+body {
+  @include outer-container();
+  @include row();
+
+  position: relative;
+}
+
+header, .main, .row {
+  @include row();
+}
+
+header {
+  @include fill-parent();
+}
+#logo {
+  @include span-columns(1);
+}
+nav {
+  @include span-columns(10);
+  @include shift(1);
+  @include omega();
+}
+.cover {
+  @include fill-parent();
+}
+.main {
+  @include span-columns(6);
+  @include shift(2);
+}
+.row {
+  @include span-columns(9);
+  @include shift(2);
+
+  .quote {
+    @include span-columns(3.5);
+  }
+  .callout {
+    @include span-columns(5.5);
+    @include shift(.5);
+  }
+}
+
+footer {
+  @include fill-parent();
+}
+
+.row {
+  @include clearfix;
+}
+
+#wrapper {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -400px;
+}
+
+.column-1 { @include span-columns(1); }
+.column-2 { @include span-columns(2); }
+.column-3 { @include span-columns(3); }
+.column-4 { @include span-columns(4); }
+.column-5 { @include span-columns(5); }
+.column-6 { @include span-columns(6); }
+.column-7 { @include span-columns(7); }
+.column-8 { @include span-columns(8); }
+.column-9 { @include span-columns(9); }
+.column-10 { @include span-columns(10); }
+.column-11 { @include span-columns(11); }
+.column-12 { @include span-columns(12); }
