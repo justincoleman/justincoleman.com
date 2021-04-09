@@ -13,9 +13,9 @@ const Labs = () => {
                     <li><a href="labs/image-editor/index.html"><strong>CSS Image Editor!</strong></a>
                         <p>Using AngularJS to make the page dynamic, I threw together a simple tool for playing with the different CSS Image filters we have available to us so you can see what each does and how they interact with each other.</p>
                     </li>
-                    {/* <li><a href="labs/now-playing/index.html"><strong>Now Playing!</strong></a>
-                        <p>Made with AngularJS. Pull in 5 new movies opening this week and show rating, movie details and synopsis. Info pulled from RottenTomatoes API (Currently broken because RottenTomatoes deactivated many developer API accounts for some reason. Working on finding a new backend API)</p>
-                    </li> */}
+                    <li><a href="labs/workout-plan"><strong>Workout Planner</strong></a>
+                        <p>Made with AngularJS. I created this little web app to help me plan and track my workouts. It uses device Local Storage to remember my progress throughout each week.</p>
+                    </li>
                     <li><a href="http://thoughtdropapp.herokuapp.com/" target="_blank" rel="noopener noreferrer"><strong>Thought Drop Web App</strong></a>
                         <p>Testing out a Thought Drop web app concept with my first ever Ruby on Rails application.</p>
                     </li>

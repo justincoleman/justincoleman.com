@@ -33,9 +33,9 @@ const About = () => {
                 <p>These are other tools/services/apps I use most frequently on my machines, either for work or for fun: <a href="http://github.com" target="_blank" rel="noopener noreferrer">Github</a> (for fun), <a href="http://bitbucket.org" target="_blank" rel="noopener noreferrer">BitBucket</a> (for work), <a href="http://tapbots.com/tweetbot/" target="_blank" rel="noopener noreferrer">Tweetbot</a>, <a href="http://slack.com" target="_blank" rel="noopener noreferrer">Slack</a>, <a href="https://www.sparklabs.com/viscosity/" target="_blank" rel="noopener noreferrer">Viscosity</a> (for VPNing) and <a href="https://justgetflux.com/" target="_blank" rel="noopener noreferrer">Flux</a> (to keep my eyes going).</p>
 
                 <h4>About This Website</h4>
-                <p>This website was built with React (because why not?). The CSS started out as <a href="http://sass-lang.com/" target="_blank" rel="noopener noreferrer">Sass</a> (SCSS to be specific). Both of those plus the JavaScript were compiled and compressed using my <a href="http://gulpjs.com/" target="_blank" rel="noopener noreferrer">Gulp</a> build script. That same script also optimizes any images used on the site. You can find my <a href="https://github.com/justincoleman/justincoleman.com/blob/master/gulpfile.js" target="_blank" rel="noopener noreferrer">Gulpfile</a> on Github. Feel free to use it and modify it suit your needs.</p>
+                <p>This website was built with React (because why not?). The CSS started out as <a href="http://sass-lang.com/" rel="noopener noreferrer">Sass</a> (SCSS to be specific). Both of those plus the JavaScript were compiled and compressed using my <a href="http://gulpjs.com/" rel="noopener noreferrer">Gulp</a> build script. That same script also optimizes any images used on the site. You can find my <a href="https://github.com/justincoleman/justincoleman.com/blob/master/gulpfile.js" rel="noopener noreferrer">Gulpfile</a> on Github. Feel free to use it and modify it suit your needs.</p>
 
-                <p>I followed the <a href="https://en.bem.info/" target="_blank" rel="noopener noreferrer">BEM</a> methodology when writing my HTML and CSS in order to try and keep things modular and understandable going forward. If you look through my source code you will see lots of classes and lots of hyphens and underscores, a telltale sign of BEM. An example would be:</p>
+                <p>I followed the <a href="https://en.bem.info/" rel="noopener noreferrer">BEM</a> methodology when writing my HTML and CSS in order to try and keep things modular and understandable going forward. If you look through my source code you will see lots of classes and lots of hyphens and underscores, a telltale sign of BEM. An example would be:</p>
                 <code className="code__block">
                     &lt;p&gt;
                         <br />
@@ -45,11 +45,9 @@ const About = () => {
                 </code>
                 <p>The only code I didn't write myself for this website was provided by the following wonderful people:</p>
                 <ul className="indent">
-                    <li><a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">React</a></li>
+                    <li><a href="https://reactjs.org" rel="noopener noreferrer">React</a></li>
                 </ul>
-                <p>The fonts used here are Open Sans via Google Fonts and Future. My domain was purchased using <a href="http://namecheap.com" target="_blank" rel="noopener noreferrer">NameCheap.com</a> whom I highly recommend and it is hosted on <a href="https://mediatemple.net/" target="_blank" rel="noopener noreferrer">MediaTemple</a>.</p>
-
-                <p>I am in the process of moving the hosting of this site to the wonderful Netlify which will hopefully be done soon. That will make my deploy process so much smoother.</p>
+                <p>The fonts used here are Open Sans via Google Fonts and Future. My domain was purchased using <a href="http://namecheap.com" rel="noopener noreferrer">NameCheap.com</a> whom I highly recommend and it is hosted on <a href="https://netlify.com/" rel="noopener noreferrer">Netlify</a> using an automated build from a Github repo.</p>
             </div>
         </main>
     );
