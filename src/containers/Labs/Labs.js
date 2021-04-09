@@ -1,5 +1,6 @@
 import React from 'react';
 import MiniHero from '../../components/MiniHero/MiniHero';
+import Footer from '../../components/Footer/Footer';
 
 const Labs = () => {
     return (
@@ -33,6 +34,8 @@ const Labs = () => {
                     </li>
                 </ul>
             </div>
+
+            <Footer />
         </main>
     );
 }

@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <footer id="footer" className="footer cf">
             <div className="footer__about">
-                <div className="footer__tagline">
+                {/* <div className="footer__tagline">
                     <h4>Justin Coleman. <br /> Front-end Designer. <br /> Movie/Car/<span className="hookem">Sports Lover</span>.</h4>
-                </div>
+                </div> */}
                 <div className="footer__contact-info">
                     <p className="footer__contact-info--phone">469-607-1586</p>
                     <p className="footer__contact-info--email">Hello@JustinColeman.com</p>

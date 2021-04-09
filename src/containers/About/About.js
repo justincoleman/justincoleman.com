@@ -1,5 +1,6 @@
 import React from 'react';
 import MiniHero from '../../components/MiniHero/MiniHero';
+import Footer from '../../components/Footer/Footer';
 
 const About = () => {
     return (
@@ -49,6 +50,8 @@ const About = () => {
                 </ul>
                 <p>The fonts used here are Open Sans via Google Fonts and Future. My domain was purchased using <a href="http://namecheap.com" rel="noopener noreferrer">NameCheap.com</a> whom I highly recommend and it is hosted on <a href="https://netlify.com/" rel="noopener noreferrer">Netlify</a> using an automated build from a Github repo.</p>
             </div>
+
+            <Footer />
         </main>
     );
 }

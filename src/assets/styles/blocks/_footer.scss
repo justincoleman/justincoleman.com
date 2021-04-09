@@ -21,8 +21,9 @@
     }
 
     &__about {
-        width: 100%;
+        width: 36%;
         height: 100%;
+        margin: 0 auto;
     }
 
     &__tagline {
@@ -32,29 +33,34 @@
 
     &__contact-info {
         font-weight: 200;
-        padding: 20px 10px 0 0;
+        padding: 20px 0 0 0;
 
         &--phone, &--email {
             margin: 0 0 20px;
+            display: inline-block;
 
             @media (min-width: 37.5em) { // width: 600px
                 & {
                     font-size: 20.8px;
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                 }
             }
             @media (min-width: 56.25em) { // width: 900px
                 & {
                     font-size: 24px;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 }
             }
             @media (min-width: 75em) { // width: 1200px
                 & {
                     font-size: 27.2px;
-                    font-size: 1.7rem;
+                    font-size: 1.4rem;
                 }
             }
+        }
+
+        &--phone {
+            margin-right: 30px;
         }
 
         &--phone:before {
