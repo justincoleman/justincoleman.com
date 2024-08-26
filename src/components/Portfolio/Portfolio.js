@@ -10,6 +10,15 @@ const Portfolio = () => {
     return (
         <div id="portfolio" className="portfolio grid-wrapper">
             <div className="box zone">
+                <a href="https://zeronetworks.com" target="_blank" rel="noopener noreferrer" className="overlay">&nbsp;</a>
+                <img src=https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2023/12/zeronetworks.png alt="Zero Networks logo" />
+                <div className="projectAbout">
+                    <h6>Zero Networks</h6>
+                    <p>While working as a contractor for Zero Networks, I took on the challenge of rebuilding their corporate website. We didn’t just give it a facelift—we also transitioned the site from WordPress to ExpressionEngine. As part of the project, I fine-tuned the HTML, CSS, and JavaScript to create a highly flexible system with reusable modules that make it easy to spin up new pages quickly. On top of that, I developed several JavaScript components, including a custom video player and carousel, text typing effect and a job portal using the Comeet API to display and filter job listings on their site.</p>
+                    <button className="btn btn--secondary" href="https://anomali.com" rel="noopener noreferrer" target="_blank">Learn More</button>
+                </div>
+            </div>    
+            <div className="box zone">
                 <a href="https://anomali.com" target="_blank" rel="noopener noreferrer" className="overlay">&nbsp;</a>
                 <img src={Anomali} alt="" />
                 <div className="projectAbout">
@@ -18,7 +27,7 @@ const Portfolio = () => {
                     <button className="btn btn--secondary" href="https://anomali.com" rel="noopener noreferrer" target="_blank">Learn More</button>
                 </div>
             </div>
-            <div className="box zone">
+            <!--<div className="box zone">
                 <a href="https://cyren.com" target="_blank" rel="noopener noreferrer" className="overlay">&nbsp;</a>
                 <img src={Cyren} alt="" />
                 <div className="projectAbout">
@@ -26,7 +35,7 @@ const Portfolio = () => {
                     <p>At Cyren I am resposnible for the corporate website. I have overseen three complete redesigns and have implemented a new build system and code framework that has allowed us to deliver each one on time while also improving accessibility, page load times and general page performance. I've also worked on various marketing based applications, email newsletters and Marketo implementations.</p>
                     <button className="btn btn--secondary" href="https://cyren.com" rel="noopener noreferrer" target="_blank">Learn More</button>
                 </div>
-            </div>
+            </div>-->
             <div className="box zone">
                 <img src={Caringo} alt="Caringo" />
                 <a href="https://caringo.com" target="_blank" rel="noopener noreferrer" className="overlay">&nbsp;</a>
