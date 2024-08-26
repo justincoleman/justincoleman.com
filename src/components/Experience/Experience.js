@@ -4,14 +4,26 @@ const Experience = () => {
     return (
         <div id="experience" className="experience">
             <h2 className="experience__header">Professonal Timeline</h2>
-            <h3 className="experience__date">2020</h3>
+            <h3 className="experience__date">2024</h3>
             <ul className="experience__timeline cf">
+                <li className="experience__job wow slideInLeft">
+                    <div className="experience__label">
+                        <div className="experience__details">
+                            <p className="experience__details--title"><strong>Senior Front-end Developer</strong></p>
+                            <p className="experience__details--company">Alta</p>
+                            <p className="experience__details--dates">July 2020 - Current</p>
+                        </div>
+                        <div className="experience__description">
+                            <p>Spearheaded development of Salesforce campaigns for direct-to-consumer marketing, collaborating with a growing team to refine processes and maintain a large campaign workload</p>
+                        </div>
+                    </div>
+                </li>
                 <li className="experience__job wow slideInRight">
                     <div className="experience__label">
                         <div className="experience__details">
                             <p className="experience__details--title"><strong>Senior Front-end Developer</strong></p>
                             <p className="experience__details--company">Cyren</p>
-                            <p className="experience__details--dates">November 2016 - Current</p>
+                            <p className="experience__details--dates">November 2016 - July 2020</p>
                         </div>
                         <div className="experience__description">
                             <p>In my role at Cyren I work as a part of the Digital Studio which is an internal group servicing multiple areas of the company. Our primary focus is building web-based marketing materials (websites, tools and emails) for the company. In my time at Cyren I have led numerous initiatives to rebuild the corporate website, refactor codebases and increase overall demand generation for the company. </p>
