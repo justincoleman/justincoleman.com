@@ -17,9 +17,6 @@ const Labs = () => {
                     <li><a href="labs/workout-plan"><strong>Workout Planner</strong></a>
                         <p>Made with AngularJS. I created this little web app to help me plan and track my workouts. It uses device Local Storage to remember my progress throughout each week.</p>
                     </li>
-                    <!--<li><a href="http://thoughtdropapp.herokuapp.com/" target="_blank" rel="noopener noreferrer"><strong>Thought Drop Web App</strong></a>
-                        <p>Testing out a Thought Drop web app concept with my first ever Ruby on Rails application.</p>
-                    </li>-->
                     <li><a href="http://codepen.io/justincoleman/full/rexKPX/" target="_blank" rel="noopener noreferrer"><strong>CSS Flags</strong></a>
                         <p>A random selection of country flags recreated with only CSS with only one HTML element per flag.</p>
                     </li>
