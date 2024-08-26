@@ -1,6 +1,6 @@
 import React from 'react';
 import Anomali from '../../assets/images/portfolio/anomali.png';
-import Cyren from '../../assets/images/portfolio/cyren.png';
+// import Cyren from '../../assets/images/portfolio/cyren.png';
 import Caringo from '../../assets/images/portfolio/caringo.png';
 import BuildASign from '../../assets/images/portfolio/bas.png';
 // import LL from '../../assets/images/portfolio/ll.png';
