@@ -27,15 +27,6 @@ const Portfolio = () => {
                     <button className="btn btn--secondary" href="https://anomali.com" rel="noopener noreferrer" target="_blank">Learn More</button>
                 </div>
             </div>
-            <!--<div className="box zone">
-                <a href="https://cyren.com" target="_blank" rel="noopener noreferrer" className="overlay">&nbsp;</a>
-                <img src={Cyren} alt="" />
-                <div className="projectAbout">
-                    <h6>Cyren</h6>
-                    <p>At Cyren I am resposnible for the corporate website. I have overseen three complete redesigns and have implemented a new build system and code framework that has allowed us to deliver each one on time while also improving accessibility, page load times and general page performance. I've also worked on various marketing based applications, email newsletters and Marketo implementations.</p>
-                    <button className="btn btn--secondary" href="https://cyren.com" rel="noopener noreferrer" target="_blank">Learn More</button>
-                </div>
-            </div>-->
             <div className="box zone">
                 <img src={Caringo} alt="Caringo" />
                 <a href="https://caringo.com" target="_blank" rel="noopener noreferrer" className="overlay">&nbsp;</a>
